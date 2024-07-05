@@ -8,14 +8,12 @@ spring:
     gateway:
       routes:   #路由
         - id: order-service
-          uri:
-            lb://orderservice   #对orderservice负载均衡，也可以指定一个实例服务
+          uri: lb://orderservice   #对orderservice负载均衡，也可以指定一个实例服务
           predicates:
             - Path=/order/**    #按路径路由
 
         - id: user-service
-          uri:
-            lb://userservice
+          uri: lb://userservice
           predicates:
             - Path=/user/**
   application:

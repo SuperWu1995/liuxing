@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: userservice        #这是负载均衡要用到的ID
+  profiles:   #配置开发环境
+    active: dev   #dev表示测试环境
+
+  cloud:
+    nacos:   #配置nacos
+      server-addr: localhost:8848  #配置nacos端口
+      config:
+        file-extension: yaml       #配置nacos设置文件类型为yaml

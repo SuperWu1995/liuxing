@@ -7,6 +7,11 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: localhost
+    port: 6379
+
+
 
 mybatis:
   type-aliases-package: com.liuxing.user.pojo
@@ -15,6 +20,6 @@ mybatis:
 
 logging:
   level:
-    com.*: debug
+    com.liuxing.user.*: info
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS

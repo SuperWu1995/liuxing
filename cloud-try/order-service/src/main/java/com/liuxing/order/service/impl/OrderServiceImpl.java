@@ -5,7 +5,6 @@ import com.liuxing.order.mapper.OrderMapper;
 import com.liuxing.order.pojo.Order;
 import com.liuxing.order.pojo.User;
 import com.liuxing.order.service.OrderService;
-import com.liuxing.order.util.IdWorker;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

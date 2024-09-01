@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface UserClient {
     /**
      * order服务获取用户信息
-     * @param UserId
      * @return User
      */
     @GetMapping("/user/{UserId}")
+    // 测试git
     User getUserById(@PathVariable("UserId") long UserId);
 }
